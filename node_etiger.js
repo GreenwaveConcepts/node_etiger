@@ -38,7 +38,9 @@ io.sockets.on("connection", require("./sockets/socket.js"));
 const qc = require('./models/qc_model');
 
 
-console.log(qc.pullLeadInfo(123456, 10730));
+qc.pullLeadInfo(136221, 10730, (data) => {
+    console.log(data);
+});
     
 
 
