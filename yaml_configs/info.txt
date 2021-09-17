@@ -1,1 +1,1 @@
-config yamls are to be blaced in this dir
+config yamls are to be placed in this dir. Fill out config-template.yaml and rename to config.yaml
