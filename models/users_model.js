@@ -15,6 +15,9 @@ module.exports = {
                 .then(element => {
                     console.log(element)
                 })
+                .then(()=>{
+                    resolve(element)
+                })
                 .catch((error) => {
                     //catch error
                     console.error(error.message)
