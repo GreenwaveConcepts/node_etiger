@@ -1,3 +1,4 @@
+const { Console } = require("console");
 const fs = require("fs");
 const config = require("./core/config");
 
@@ -36,7 +37,14 @@ app.use(function (req, res, next) {
 
 io.sockets.on("connection", require("./sockets/socket.js"));
 
+const users = require('./models/users_model');
+
+async () =>{
+    console.log(await users.userProfile(10730));
+}
+
+
 //Start the server
 server.listen(config.port, () => {
-	console.log("server listening on port 3010");
+	console.log("server listening on port" + config.port);
 });
