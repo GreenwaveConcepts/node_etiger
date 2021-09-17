@@ -39,7 +39,7 @@ const qc = require('./models/qc_model');
 
 
 qc.pullLeadInfo(13622196, 10730, (data) => {
-    console.log(data['lead']['lsloa_ver_by']);
+    console.log(data);
 });
     
 
