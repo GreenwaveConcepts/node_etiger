@@ -14,7 +14,7 @@ module.exports = {
         loginInfo = await userData;
 
         lead = new Promise((resolve, reject) => {
-            const connnection = vtiger.Connection(config.webservices,
+            const connnection = new vtiger.Connection(config.webservices,
                 loginInfo.username,
                 loginInfo.key);
             connnection.login()
