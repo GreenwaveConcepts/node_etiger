@@ -4,7 +4,7 @@ const yaml = require('js-yaml');
 module.exports.config = () => {
     let config = null;
     try {
-        config = yaml.safeLoad(fs.readFileSync('../yaml_configs/config.yaml', 'utf8'));
+        config = yaml.safeLoad(fs.readFileSync('/node/node_etiger/yaml_configs/config.yaml', 'utf8'));
     } catch (e) {
         console.log(e);
     }
