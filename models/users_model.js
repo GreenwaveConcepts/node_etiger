@@ -6,6 +6,7 @@ const connection = new vtiger.Connection(
     config.etigerAPIuser,
     config.etigerAPIkey
 );
+console.log(config.env);
 const envro = config.env;
 module.exports = {
     userProfile: async (user) => {
