@@ -1,5 +1,5 @@
 const fs = require("fs");
-const config = require("../application/node_controllers/config/config").config();
+const config = require("./core/config");
 
 var options = {
 	key: fs.readFileSync(config.key),
