@@ -16,10 +16,8 @@ module.exports = {
                     // if (envro == 'dev') {
                         console.log('User model ran')
                     // };
+                    connection.logout();
                     resolve(element);
-                })
-                .then(() => {
-                    connection.logout()
                 })
                 .catch((error) => {
                     //catch error
