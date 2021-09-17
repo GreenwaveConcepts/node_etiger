@@ -1,7 +1,6 @@
-const { Console } = require("console");
 const fs = require("fs");
-const config = require("./core/config");
-
+const config = require("./core/config").config();
+console.log(config);
 var options = {
 	key: fs.readFileSync(config.key),
 	cert: fs.readFileSync(config.cert),
