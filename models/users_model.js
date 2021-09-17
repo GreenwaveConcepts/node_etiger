@@ -20,6 +20,7 @@ module.exports = {
                 console.error(error.message)
             })
         })
+        console.log(data);
         return await data;
     },
 }
