@@ -6,7 +6,6 @@ const connection = new vtiger.Connection(
     config.etigerAPIuser,
     config.etigerAPIkey
 );
-console.log(config.env);
 const envro = config.env;
 module.exports = {
     userProfile: async (user) => {
@@ -14,9 +13,9 @@ module.exports = {
             connection.login()
                 .then(() => connection.retrieve('19x' + user))
                 .then(element => {
-                    if (envro == 'dev') {
+                    // if (envro == 'dev') {
                         console.log('User model ran')
-                    };
+                    // };
                     resolve(element);
                 })
                 .then(() => {
