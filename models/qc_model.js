@@ -14,10 +14,10 @@ module.exports = {
         loginInfo = await userData;
 
         lead = new Promise((resolve, reject) => {
-            const connnection = new vtiger.Connection(config.webservices,
+            var connect = new vtiger.Connection(config.webservices,
                 loginInfo.username,
                 loginInfo.key);
-            connnection.login()
+            connect.login()
                 .then(() => connection.retrieve('14x' + record))
                 .then(element => {
                     resolve({lead: element});
