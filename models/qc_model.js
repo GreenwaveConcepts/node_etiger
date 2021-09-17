@@ -7,8 +7,7 @@ module.exports = {
                resolve({key: data.accesskey, username: data.user_name})                
             });
         })
-        key = await userData.key;
-        userName = await userData.user_name;
-        console.log(key + ' ' + userName);
+        data = await userData;
+        console.log(data);
     }
 }
