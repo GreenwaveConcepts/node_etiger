@@ -13,6 +13,7 @@ module.exports = {
             connection.login()
             .then(() => connection.retrieve('19x' + user))
             .then(element => {
+                console.log('hello');
                 resolve({data: element})
             })
             .catch((error) => {
