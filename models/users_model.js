@@ -9,7 +9,6 @@ const connection = new vtiger.Connection(
 const envro = config.env;
 module.exports = {
     userProfile: async (user) => {
-      console.log(config.etigerAPIuser);
             connection.login()
                 .then(() => connection.retrieve('19x' + user))
                 .then(element => {
@@ -19,8 +18,5 @@ module.exports = {
                     //catch error
                     console.error(error.message)
                 })
-
-    
-       
     },
 }

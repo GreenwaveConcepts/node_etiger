@@ -36,9 +36,12 @@ app.use(function (req, res, next) {
 io.sockets.on("connection", require("./sockets/socket.js"));
 
 const users = require('./models/users_model');
-var test = users.userProfile(10730)
 
+async () => {
+    var test = users.userProfile(10730)
     console.log(test);
+}
+
 
 
 
