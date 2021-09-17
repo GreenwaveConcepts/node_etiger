@@ -18,10 +18,10 @@ module.exports = {
                 loginInfo.username,
                 loginInfo.key);
             connect.login()
-                .then(() => connection.retrieve('14x' + record))
+                .then(() => connect.retrieve('14x' + record))
                 .then(element => {
                     resolve({lead: element});
-                    connnection.logout()
+                    connect.logout()
                 })
                 .catch((error) => {
                     //catch error
