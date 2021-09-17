@@ -42,6 +42,7 @@ node_modules/
 jspm_packages/
 yaml_configs/*
 !yaml_configs/info.txt
+!yaml_configs/config-template.yaml
 
 # TypeScript v1 declaration files
 typings/

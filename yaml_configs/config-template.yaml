@@ -1,0 +1,13 @@
+env: ''
+host: ''
+port: '3015'
+key: ''
+cert: ''
+ca: ''
+etigerAPIuser: ''
+etigerAPIkey: ''
+webservices: ''
+mysql:
+  host: ''
+  user: ''
+  password: ''
