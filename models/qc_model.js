@@ -18,7 +18,7 @@ module.exports = {
                 loginInfo.username,
                 loginInfo.key);
             connect.login()
-                .then(() => connect.retrieve('14x' + record))
+                .then(() => connect.retrieve('2x' + record))
                 .then(element => {
                     resolve({lead: element});
                     connect.logout()
