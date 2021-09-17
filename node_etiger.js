@@ -38,7 +38,7 @@ io.sockets.on("connection", require("./sockets/socket.js"));
 const users = require('./models/users_model');
 
 users.userProfile(10730, (data) => {
-    console.log(data);
+    console.log(data.department);
 });
 
     
