@@ -1,0 +1,22 @@
+{
+  "name": "node_etiger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "etiger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barmstrong-truenergy/node_etiger.git"
+  },
+  "author": "Bradley Armstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barmstrong-truenergy/node_etiger/issues"
+  },
+  "homepage": "https://github.com/barmstrong-truenergy/node_etiger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
