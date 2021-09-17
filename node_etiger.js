@@ -1,6 +1,5 @@
 const fs = require("fs");
 const config = require("./core/config").config();
-console.log(config);
 var options = {
 	key: fs.readFileSync(config.key),
 	cert: fs.readFileSync(config.cert),
@@ -45,5 +44,5 @@ async () =>{
 
 //Start the server
 server.listen(config.port, () => {
-	console.log("server listening on port" + config.port);
+	console.log("server listening on port: " + config.port);
 });
