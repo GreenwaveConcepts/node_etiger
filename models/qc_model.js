@@ -8,6 +8,6 @@ module.exports = {
             });
         })
         data = await userData;
-        console.log(data);
+        console.log(data.key);
     }
 }
