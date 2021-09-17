@@ -38,7 +38,7 @@ io.sockets.on("connection", require("./sockets/socket.js"));
 const users = require('./models/users_model');
 
 async () => {
-    var test = users.userProfile(10730)
+    var test = await users.userProfile(10730)
     console.log(test);
 }
 
