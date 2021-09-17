@@ -37,10 +37,10 @@ io.sockets.on("connection", require("./sockets/socket.js"));
 
 const users = require('./models/users_model');
 
-async () => {
-    console.log(await users.userProfile(10730));
+users.userProfile(10730, (data) => {
+    console.log(data);
+});
 
-}
     
 
 
