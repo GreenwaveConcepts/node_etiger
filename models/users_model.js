@@ -9,18 +9,18 @@ const connection = new vtiger.Connection(
 const envro = config.env;
 module.exports = {
     userProfile: async (user) => {
-        data = new Promise((resolve, reject) => {
+        
             connection.login()
             .then(() => connection.retrieve('19x' + user))
             .then(element => {
-                resolve(element)
+               data = element;
             })
             .catch((error) => {
                 //catch error
                 console.error(error.message)
             })
-        })
+
         console.log(await data);
-        return await data;
+        return data;
     },
 }
