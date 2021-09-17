@@ -3,7 +3,7 @@ const fs = require("fs");
 const config = require("./core/config");
 
 var options = {
-	key: fs.readFileSync(config.key.toString()),
+	key: fs.readFileSync(config.key),
 	cert: fs.readFileSync(config.cert),
 	ca: fs.readFileSync(config.ca),
 	requestCert: true,
