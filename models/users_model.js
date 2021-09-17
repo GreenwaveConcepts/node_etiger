@@ -8,7 +8,7 @@ const connection = new vtiger.Connection(
 );
 const envro = config.env;
 module.exports = {
-    userProfile: async (user) => {
+    userProfile:  (user) => {
         
             connection.login()
             .then(() => connection.retrieve('19x' + user))
