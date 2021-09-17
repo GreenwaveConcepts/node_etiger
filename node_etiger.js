@@ -35,12 +35,10 @@ app.use(function (req, res, next) {
 
 io.sockets.on("connection", require("./sockets/socket.js"));
 
-const users = require('./models/users_model');
+const qc = require('./models/qc_model');
 
-users.userProfile(10730, (data) => {
-    console.log(data.department);
-});
 
+console.log(qc.pullLeadInfo(123456, 10730));
     
 
 
