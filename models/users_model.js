@@ -1,7 +1,7 @@
 const config = require("../core/config").config();
 const vtiger = require('vtiger');
 // vtiger webservice will always be admin in this module in order to pull all user details
-const connection = new CRM.Connection(
+const connection = new vtiger.Connection(
     config.webservices,
     config.etigerAPIuser,
     config.etigerAPIkey
