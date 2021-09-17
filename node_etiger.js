@@ -4,7 +4,7 @@ console.log(config);
 var options = {
 	key: fs.readFileSync(config.key),
 	cert: fs.readFileSync(config.cert),
-	ca: fs.readFileSync(config.ca),
+	// ca: fs.readFileSync(config.ca),
 	requestCert: true,
 	rejectUnauthorized: false,
 };
