@@ -11,16 +11,19 @@ module.exports = {
     userProfile: async (user) => {
       
             connection.login()
-                .then(() => connection.retrieve('14x404'))
+                .then(() => connection.retrieve('19x' + user))
                 .then(element => {
                     console.log(element)
                 })
-                // .then(()=>{
-                //     return element;
-                // })
+                .then(()=>{
+                  return element
+                })
                 .catch((error) => {
                     //catch error
                     console.error(error.message)
                 })
+
+    
+       
     },
 }
