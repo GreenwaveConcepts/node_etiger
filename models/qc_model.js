@@ -20,12 +20,16 @@ module.exports = {
             connect.login()
                 .then(() => connect.retrieve('2x' + record))
                 .then(element => {
-                    resolve({lead: element});
+                    resolve({
+                        lead: element
+                    });
                     connect.logout()
                 })
                 .catch((error) => {
                     //catch error
-                    console.error(error.message)
+                    resolve({
+                        err: error.message
+                    });
                 })
         })
 
