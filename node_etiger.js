@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
         "https://testcrm.truenergygroup.com"
 	];
 	var origin = req.headers.origin;
-    console.log(origin);
+    console.log(req);
 	if (allowedOrigins.indexOf(origin) > -1) {
 		res.setHeader("Access-Control-Allow-Origin", origin);
 	}
