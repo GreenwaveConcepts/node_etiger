@@ -33,7 +33,9 @@ app.use(function (req, res, next) {
     
 	return next();
 });
-
+io.engine.on("headers", (headers) => {
+	headers["Access-Control-Allow-Private-Network"] = true;
+  });
 io.sockets.on("connection", require("./sockets/socket.js"));
 
 const qc = require('./models/qc_model');
